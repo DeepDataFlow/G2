@@ -50,6 +50,24 @@ Open this URL to authenticate:
 
 Open that URL in Firefox (`firefox &`). You'll see the G2 home page.
 
+### Next: start from a ready-made project
+
+Want to work on a real design right away? Clone
+**[G2_demo_sky130](https://github.com/DeepDataFlow/G2_demo_sky130)** into
+your workspace. It's a complete sky130 project with the `gcd` and `spm`
+blocks, signoff scenarios, libraries, pre-configured flows, and reference
+QoR to compare your runs against.
+
+```bash
+cd $G2_SYS/projs
+git clone https://github.com/DeepDataFlow/G2_demo_sky130
+cd G2_demo_sky130
+make setup
+```
+
+See the [G2_demo_sky130 README](https://github.com/DeepDataFlow/G2_demo_sky130#readme)
+for details.
+
 ---
 
 ## Requirements
