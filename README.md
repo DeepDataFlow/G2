@@ -5,6 +5,12 @@ from RTL to signoff. It runs locally on your Linux machine. You work in a
 browser, and G2 manages projects, blocks, libraries, design data and tool
 runs for you.
 
+![G2 Impl Status view comparing three runs of gcd](snapshot/g2_impl.png)
+
+*Three implementation runs of gcd compared in the Impl Status view:
+floorplan, die size, density, runtime and timing for each scenario, side
+by side.*
+
 This package is the **Community Edition**. It ships with everything needed
 to run a complete open-source flow:
 
