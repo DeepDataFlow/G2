@@ -23,6 +23,33 @@ to run a complete open-source flow:
 
 ---
 
+## Requirements
+
+### Operating system
+
+| OS | G2 platform | Bundled open-source EDA tools |
+|---|---|---|
+| Ubuntu 22.04 / 24.04 / 25.04 | ✅ Tested | ✅ |
+| Rocky / RHEL 8 or later | ✅ | ❌ (needs glibc 2.35+) |
+
+The G2 platform itself runs on Rocky/RHEL 8 or later. The bundled
+OpenROAD, Yosys and Verilator binaries need **glibc 2.35 or later**, which
+means Ubuntu 22.04 or later. You only need Ubuntu if you plan to run the
+bundled open-source flows.
+
+### System packages
+
+G2 uses these standard command-line tools: `xterm`, `tcsh`, `gvim`,
+`firefox`, `tclsh`, `nproc`, `zcat`.
+
+On Ubuntu:
+
+```bash
+sudo apt-get install -y xterm tcsh vim-gtk3 firefox tcl coreutils gzip
+```
+
+---
+
 ## Quick Start
 
 ```bash
@@ -67,33 +94,6 @@ make setup
 
 See the [G2_demo_sky130 README](https://github.com/DeepDataFlow/G2_demo_sky130#readme)
 for details.
-
----
-
-## Requirements
-
-### Operating system
-
-| OS | G2 platform | Bundled open-source EDA tools |
-|---|---|---|
-| Ubuntu 22.04 / 24.04 / 25.04 | ✅ Tested | ✅ |
-| Rocky / RHEL 8 or later | ✅ | ❌ (needs glibc 2.35+) |
-
-The G2 platform itself runs on Rocky/RHEL 8 or later. The bundled
-OpenROAD, Yosys and Verilator binaries need **glibc 2.35 or later**, which
-means Ubuntu 22.04 or later. You only need Ubuntu if you plan to run the
-bundled open-source flows.
-
-### System packages
-
-G2 uses these standard command-line tools: `xterm`, `tcsh`, `gvim`,
-`firefox`, `tclsh`, `nproc`, `zcat`.
-
-On Ubuntu:
-
-```bash
-sudo apt-get install -y xterm tcsh vim-gtk3 firefox tcl coreutils gzip
-```
 
 ---
 
