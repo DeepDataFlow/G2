@@ -21,6 +21,22 @@ to run a complete open-source flow:
 | Demo cases | Ready-to-run examples for each PDK |
 | Runtime | Tcl and Node.js. You don't need a system-wide install. |
 
+## Video Tutorials
+
+New to G2? The [Getting Started series](https://www.youtube.com/playlist?list=PLZvKK6r2180A) on YouTube goes from download
+to a routed block with signoff timing in about 27 minutes.
+
+| # | Video | Length |
+|---|---|---|
+| 0 | [Trailer: G2 in one minute](https://www.youtube.com/watch?v=DGXHipKGuOU) | 1:13 |
+| 1 | [Install and launch](https://www.youtube.com/watch?v=2w3J3l5PeSk) | 3:07 |
+| 2 | [Build a Nangate45 demo project in one command](https://www.youtube.com/watch?v=iwAAUrzuFE8) | 3:55 |
+| 3 | [RTL to GDS with Yosys, OpenROAD and OpenSTA](https://www.youtube.com/watch?v=saEB3l4aPWk) | 6:16 |
+| 4 | [Design Data Management (DDM)](https://www.youtube.com/watch?v=GpVTZVLqKcw) | 2:26 |
+| 5 | [Compare implementation runs side by side](https://www.youtube.com/watch?v=99AJz-IdMXw) | 4:15 |
+| 6 | [Debug timing paths with tpath](https://www.youtube.com/watch?v=8SoFOXsoSHk) | 2:19 |
+| 7 | [AI assistant for chip design flows](https://www.youtube.com/watch?v=EVPl3y4S0I8) | 3:09 |
+
 ---
 
 ## Requirements
@@ -77,12 +93,28 @@ Open this URL to authenticate:
 
 Open that URL in Firefox (`firefox &`). You'll see the G2 home page.
 
-### Next: start from a ready-made project
+Prefer to watch? [Tutorial #1](https://www.youtube.com/watch?v=2w3J3l5PeSk) walks through these steps.
 
-Want to work on a real design right away? Clone
+### Next: get a project to work on
+
+There are two ways to start. Both give you the `gcd` and `spm` blocks with
+signoff scenarios and libraries already set up.
+
+**Follow the video series (Nangate45).** One script builds the demo
+project that the tutorials use. It takes a few seconds:
+
+```bash
+$G2_ROOT/demo_case/nangate45/build.sh
+```
+
+Refresh the G2 home page, and the `nangate45` project appears. Then follow
+[Tutorial #2](https://www.youtube.com/watch?v=iwAAUrzuFE8) for a tour of the project and
+[Tutorial #3](https://www.youtube.com/watch?v=saEB3l4aPWk) to run the flow. The same script exists for
+`sky130` and `asap7` under `$G2_ROOT/demo_case/`.
+
+**Start from a complete project (sky130).** Clone
 **[G2_demo_sky130](https://github.com/DeepDataFlow/G2_demo_sky130)** into
-your workspace. It's a complete sky130 project with the `gcd` and `spm`
-blocks, signoff scenarios, libraries, pre-configured flows, and reference
+your workspace. It adds pre-configured flows for a `v01` run and reference
 QoR to compare your runs against.
 
 ```bash
